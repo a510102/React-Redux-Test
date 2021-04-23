@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { store } from './store';
+import { addArticle } from './actions';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+
+console.log(store.getState())
 
 ReactDOM.render(
   <React.StrictMode>
