@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { store } from './store';
+import { addArticle } from './actions';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+console.log(store.getState())
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>Start</div>
   </React.StrictMode>,
   document.getElementById('root')
 );
